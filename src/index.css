@@ -1,0 +1,132 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+/* Main Section Styles */
+.main {
+  background: linear-gradient(to bottom right, #57bfe9, #2dfff5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #071c33;
+  text-shadow: 2px 2px 4px rgba(31, 87, 97, 0.795);
+  font-weight: 700;
+}
+
+/* Gradient Text */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #0eaaa2, #0d3342);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Question Styles */
+.mcqs-div {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.li:hover {
+  background-color: #f0f4f8;
+  border-color: #bbb;
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+  accent-color: #00438b;
+}
+
+/* Label Styles */
+.mcqs-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Button Styles */
+.btn-next {
+  background-color: #00438b;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-next:hover {
+  background-color: #003a7d;
+  transform: scale(1.05);
+}
+
+.btn-next svg {
+  margin-left: 8px;
+}
+
+/* Result Section Styles */
+.result {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Restart Button Styles */
+.result a {
+  background-color: #00438b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.result a:hover {
+  background-color: #003a7d;
+  color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .btn-next {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+  }
+}
